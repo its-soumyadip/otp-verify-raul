@@ -3,6 +3,10 @@ body{
     font-family: 'Rubik', sans-serif;
     overflow: hidden;
 }
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 .otp-container{
     display: flex;
     align-items: center;
@@ -83,6 +87,11 @@ body{
     margin-bottom: 9.5rem;
     border: 2px solid white;
   }
+  #verify1:focus, #verify2:focus, .my-btn:focus{
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+  }
 
   @media screen and (max-width: 768px) {
     .mobile-cont{
@@ -97,7 +106,7 @@ body{
       }
 
     .container-fluid{
-      display: none;
+      display:none;
     }
     
     .title-button{
